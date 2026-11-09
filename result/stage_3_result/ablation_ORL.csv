@@ -1,0 +1,18 @@
+variant,change,accuracy,f1_macro,f1_weighted,params,train_time_s
+baseline,-,0.975,0.9666666666666666,0.9666666666666666,2598408,78.4
+depth_shallow,{'conv_channels': [16]},0.925,0.9,0.9,10562280,59.0
+depth_deeper,"{'conv_channels': [16, 32, 64, 128]}",1.0,1.0,1.0,1427336,87.0
+kernel_small,"{'kernel_size': 3, 'padding': 1}",0.975,0.9666666666666668,0.9666666666666668,2557192,60.8
+kernel_large,"{'kernel_size': 7, 'padding': 3}",1.0,1.0,1.0,2660232,96.5
+padding_none,{'padding': 0},0.95,0.9333333333333332,0.9333333333333332,1385992,57.0
+stride2_no_pool,"{'stride': 2, 'pooling': None}",0.925,0.9083333333333332,0.9083333333333332,2827784,20.3
+pool_avg,{'pooling': 'avg'},0.95,0.9333333333333332,0.9333333333333332,2598408,68.9
+hidden_small,{'hidden_dim': 64},0.825,0.7749999999999999,0.7749999999999999,698184,71.3
+hidden_large,{'hidden_dim': 1024},1.0,1.0,1.0,10199304,90.0
+loss_label_smooth,{'loss_name': 'label_smoothing'},0.975,0.9666666666666666,0.9666666666666666,2598408,73.5
+loss_multi_margin,{'loss_name': 'multi_margin'},1.0,1.0,1.0,2598408,72.9
+loss_mse,{'loss_name': 'mse'},0.925,0.9,0.9,2598408,72.9
+optim_sgd,"{'optimizer_name': 'sgd', 'learning_rate': 0.01}",0.95,0.9333333333333332,0.9333333333333332,2598408,70.5
+optim_rmsprop,"{'optimizer_name': 'rmsprop', 'learning_rate': 0.001}",0.975,0.9666666666666666,0.9666666666666666,2598408,78.0
+no_batchnorm,{'use_batchnorm': False},0.95,0.9333333333333332,0.9333333333333332,2598184,60.4
+no_dropout,{'dropout': 0.0},0.975,0.9666666666666666,0.9666666666666666,2598408,69.8

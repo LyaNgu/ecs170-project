@@ -72,6 +72,7 @@ def main():
         if args.epochs:
             cfg['max_epoch'] = args.epochs
         print('\n================ %s / %s : %s ================' % (args.dataset, name, cfg))
+        _common.set_seed(2)
         try:
             method_obj = cls('CNN %s %s' % (args.dataset, name), '', **cfg)
         except RuntimeError as e:   # e.g. feature map shrinks to zero with no padding + deep net

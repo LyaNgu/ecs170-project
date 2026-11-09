@@ -18,6 +18,12 @@ DATA_DIR = os.path.join(ROOT, 'data', 'stage_3_data') + os.sep
 RESULT_DIR = os.path.join(ROOT, 'result', 'stage_3_result') + os.sep
 
 
+def set_seed(seed=2):
+    # call this BEFORE building the model so the initial weights are reproducible too
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+
+
 def run_experiment(dataset_file, method_obj, tag, use_single_channel=False, seed=2, verbose=True):
     #---- parameter section -------------------------------
     np.random.seed(seed)

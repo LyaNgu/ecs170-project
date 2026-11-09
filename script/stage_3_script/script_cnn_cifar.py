@@ -7,5 +7,6 @@ from code.stage_3_code.Method_CNN_CIFAR import Method_CNN_CIFAR
 
 #---- Convolutional Neural Network script ----
 if 1:
+    _common.set_seed(2)
     method_obj = Method_CNN_CIFAR('CNN CIFAR', '')
     _common.run_experiment('CIFAR', method_obj, 'CNN_CIFAR', use_single_channel=False)

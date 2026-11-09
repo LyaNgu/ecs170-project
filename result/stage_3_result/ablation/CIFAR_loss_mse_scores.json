@@ -1,0 +1,31 @@
+{
+  "scores": {
+    "accuracy": 0.5611,
+    "precision_weighted": 0.6125430932298241,
+    "recall_weighted": 0.5611,
+    "f1_weighted": 0.5534136061543031,
+    "precision_macro": 0.6125430932298241,
+    "recall_macro": 0.5610999999999999,
+    "f1_macro": 0.553413606154303
+  },
+  "history": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.07086003488302231,
+      0.059665119839906695
+    ],
+    "train_acc": [
+      0.5405,
+      0.56284
+    ],
+    "test_acc": [
+      0.5363,
+      0.5611
+    ]
+  },
+  "training_time_s": 193.37367224693298,
+  "num_params": 1423114
+}
