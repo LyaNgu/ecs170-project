@@ -1,0 +1,7 @@
+data/stage_3_data/*
+!data/stage_3_data/.gitkeep
+result/**/*_prediction_result_*
+__pycache__/
+*.pyc
+.venv/
+.idea/
